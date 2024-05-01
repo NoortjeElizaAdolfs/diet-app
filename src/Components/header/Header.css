@@ -1,0 +1,8 @@
+header {
+  display: block;
+  background-image: url("../../images/banner.jpeg");
+  background-position: center bottom;
+  width: 100vw; 
+  height: 300px; 
+}
+

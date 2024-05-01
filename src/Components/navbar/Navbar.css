@@ -1,5 +1,5 @@
 
-header {
+nav {
   padding-right: 0;
   margin: auto;
   display:flex;
@@ -57,4 +57,7 @@ li > a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.logo{
+  width: 200px
 }

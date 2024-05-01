@@ -1,12 +1,13 @@
 import { UilFacebook, UilInstagramAlt, UilTwitter, UilLinkedin } from '@iconscout/react-unicons'
 import '../footer/Footer.css';
+import Logo from '../../images/Logo.png';
 
 function Footer() {
     return (
         <>
             <footer>
                 <div className="f-col f-col-1">
-                    <img src="logo.png" className='logo' alt='Diet' />
+                <img src={Logo} className='logo' alt='Diet Chef' />
                 </div>
 
                 <div className="f-col">

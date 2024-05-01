@@ -1,16 +1,19 @@
 import React from 'react'
 import {BrowserRouter, Routes,Route } from "react-router-dom"
 import Home from './Pages/home/Home';
-import Footer from "./Components/footer/Footer";
+import Footer from "../src/Components/footer/Footer";
+import Header from "../src/Components/header/Header";
 
 const App = () => {
   
   return (
-    <div>
+    <>
+      <Header/>
       <Routes>
           <Route path="/" element={<Home/>}/>
-           </Routes>
-    </div>
+      </Routes>
+      <Footer />
+    </>
   )
 }
 
