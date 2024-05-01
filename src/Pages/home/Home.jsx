@@ -1,33 +1,15 @@
-import React from "react";
-//import { Link } from "react-router-dom";
-import Navbar from "../../Components/navbar/Navbar";
-import Footer from "../../Components/footer/Footer";
+import'../home/Home.css';
 
 function Home() {
-    return (
-        <>
-            <Navbar />
-            <header className="banner">
-                <div className="banner-info">
-                <h1>WELKOM BIJ DIET CHEF</h1>
-                </div>
-            </header>
-            <main>
-                <h2 class="subtitle">Wat is Diet chef?</h2><br/>
-                <p class="landingtext">
-                "Stap binnen in een culinaire wereld van smaakvolle ontdekkingen!
-                Welkom op onze eten pagina, waar elke hap een avontuur is en elk gerecht een verhaal vertelt. 
-                Laat je inspireren door een overvloed aan heerlijke recepten, boordevol smaak en creativiteit.
-                Of je nu een doorgewinterde chef-kok bent of gewoon op zoek bent naar nieuwe culinaire ervaringen, 
-                hier vind je alles wat je nodig hebt om je smaakpapillen te prikkelen en je keuken tot leven te brengen.
-                Dus trek een schort aan, pak je koksmes en laat je meevoeren op een onvergetelijke reis door de wereld van eten en genot. 
-                Eet smakelijk!"
-                </p>
-
-            </main>
-            {<Footer /> }
-        </>
-    );
+  return (
+    <section>
+        <h1>Welkom bij Flavor Maison!</h1>
+          <p>
+            Jouw culinaire metgezel op de reis naar heerlijke zelfbereide maaltijden! Ontdek een wereld van smaken, inspiratie en gemak direct vanuit je keuken. 
+            Of je nu een doorgewinterde chef-kok bent of net begint aan je culinaire avontuur, Flavor Maison biedt een smaakvolle selectie van recepten, afgestemd op jouw stemming en voorkeuren, 
+            Laat je inspireren, ontdek nieuwe smaken en deel jouw kookpassie met de gemeenschap. Begin vandaag nog met het creëren van onvergetelijke eetervaringen.
+          </p>
+      </section>
+  );
 }
-
 export default Home;

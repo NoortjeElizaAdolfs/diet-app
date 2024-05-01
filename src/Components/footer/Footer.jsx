@@ -14,10 +14,10 @@ function Footer() {
                         <strong>Over ons</strong> <br/>
 
                     <div>
-                        <a href='/recepten'>Recepten</a> <br />
+                        {/* <a href='/recepten'>Recepten</a> <br />
                         <a href='/inpiratie'>Inspiratie</a><br />
                         <a href='/cocktails'>Cocktails</a>
-                        <a href='/logout'>Logout</a>
+                        <a href='/logout'>Logout</a> */}
                     </div>
 
                 </div>
