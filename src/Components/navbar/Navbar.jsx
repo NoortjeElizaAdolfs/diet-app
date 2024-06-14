@@ -15,7 +15,7 @@ function Navbar() {
               <NavLink className={({ isActive }) => isActive ? 'active-menu-link' : 'default-menu-link'} to="/recepten">Recepten</NavLink>
             </li>
             <li>
-              <NavLink className={({ isActive }) => isActive ? 'active-menu-link' : 'default-menu-link'} to="/flavor-mood">Inspiratie</NavLink>
+              <NavLink className={({ isActive }) => isActive ? 'active-menu-link' : 'default-menu-link'} to="/inspiratie">Inspiratie</NavLink>
             </li>
             <li>
               <NavLink className={({ isActive }) => isActive ? 'active-menu-link' : 'default-menu-link'} to="/over-ons">Over Ons</NavLink>

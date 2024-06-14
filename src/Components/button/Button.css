@@ -1,0 +1,22 @@
+button {
+  border-radius: 4px;
+  border: 1px solid black;
+  margin: 0 0 10px 0;
+  padding: 10px 18px 10px 18px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  background-color: #FFFFFF;
+  width: 100%;
+}
+
+button:hover {
+  color: #ffafaf;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
