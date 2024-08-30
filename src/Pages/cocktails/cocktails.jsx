@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import ErrorBox from "../../Components/errorbox/ErrorBox";
 import Recipe from "../../Components/recipe/Recipe";
-import Navbar from "../../Components/navbar/Navbar";
 import axios from "axios";
 
 
@@ -47,7 +46,6 @@ function Cocktails() {
 
         return (
             <>
-                    <Navbar/>
                     <main className="container search">
                             <section className="fb-item">
                                     <h1>Food Searching App</h1>

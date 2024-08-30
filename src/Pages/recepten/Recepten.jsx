@@ -3,7 +3,6 @@ import { v4 as uuidv4 } from "uuid";
 import Recipe from "../../Components/recipe/Recipe";
 import ErrorBox from "../../Components/errorbox/ErrorBox";
 import axios from "axios";
-import Navbar from "../../Components/navbar/Navbar";
 
 
 function Recepten() {
@@ -47,7 +46,6 @@ function Recepten() {
 
     return (
         <>
-            <Navbar/>
             <main className="container search">
                 <section className="fb-item">
                     <h1>Recipes</h1>
