@@ -10,6 +10,8 @@ import Register from './Pages/account/Register';
 import NotFound from './Pages/not_found/Not-found';
 import Recepten from './Pages/recepten/Recepten';
 import { AuthContext } from './context/Auth';
+import Inspiratie from './Pages/inspiratie/inspiratie';
+
 
 const App = () => {
   const { user } = useContext(AuthContext);
@@ -20,6 +22,7 @@ const App = () => {
           <Route path="/" element={<Home/>}/>
           <Route path="/account" element={user?.username ? <Account /> : <Login />} />
           <Route path="/recepten" element={user?.username ? <Recepten /> : <Login />} />
+          <Route path="/inspiratie" element={user?.username ? <Inspiratie /> : <Login />} />
             <Route path="/login" element={<Login />} />
             <Route path="/logout" element={<Logout />} />
             <Route path="/registreren" element={<Register />} />

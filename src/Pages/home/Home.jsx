@@ -5,9 +5,7 @@ function Home() {
     <section>
         <h1>Welkom bij Diet chef!</h1>
           <p>
-            Jouw culinaire metgezel op de reis naar heerlijke zelfbereide maaltijden! Ontdek een wereld van smaken, inspiratie en gemak direct vanuit je keuken. 
-            Of je nu een doorgewinterde chef-kok bent of net begint aan je culinaire avontuur, Flavor Maison biedt een smaakvolle selectie van recepten, afgestemd op jouw stemming en voorkeuren, 
-            Laat je inspireren, ontdek nieuwe smaken en deel jouw kookpassie met de gemeenschap. Begin vandaag nog met het creëren van onvergetelijke eetervaringen.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </p>
       </section>
   );
