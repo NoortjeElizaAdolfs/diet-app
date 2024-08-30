@@ -40,81 +40,83 @@ function Register() {
   }
 
   return (
-    <section className='text-align-center'>
-      <h1>Registreren</h1>
-      <MessageBox message={message} />
-      <form className='display-flex flex-direction-column-center margin-auto p-20' onSubmit={handleSubmit(handleFormSubmit)}>
-      <Input
-          type='text'
-          name='username'
-          id='username-field'
-          label='Gebruikersnaam'
-          validationRules={{
-            required: {
-              value: true,
-              message: 'Gebruikersnaam is verplicht',
-            }
-          }}
-          register={register}
-          errors={errors}
-          labelStyle='hide'
-        /> <Input
-          type='email'
-          name='email'
-          id='email-field'
-          label='E-mailadres'
-          validationRules={{
-            required: {
-              value: true,
-              message: 'E-mailadres is verplicht',
-            }
-          }}
-          register={register}
-          errors={errors}
-          labelStyle='hide'
-        />
+    <div class="login-container">
+      <section className='text-align-center'>
+        <h1>Registreren</h1>
+        <MessageBox message={message} />
+        <form className='display-flex flex-direction-column-center margin-auto p-20' onSubmit={handleSubmit(handleFormSubmit)}>
         <Input
+            type='text'
+            name='username'
+            id='username-field'
+            label='Gebruikersnaam'
+            validationRules={{
+              required: {
+                value: true,
+                message: 'Gebruikersnaam is verplicht',
+              }
+            }}
+            register={register}
+            errors={errors}
+            labelStyle='hide'
+          /> <Input
+            type='email'
+            name='email'
+            id='email-field'
+            label='E-mailadres'
+            validationRules={{
+              required: {
+                value: true,
+                message: 'E-mailadres is verplicht',
+              }
+            }}
+            register={register}
+            errors={errors}
+            labelStyle='hide'
+          />
+          <Input
+            type='password'
+            name='password'
+            id='password-field'
+            label='Wachtwoord'
+            validationRules={{
+              required: {
+                value: true,
+                message: 'Wachtwoord is verplicht',
+              }
+            }}
+            register={register}
+            errors={errors}
+            labelStyle='hide'
+          /> <Input
           type='password'
-          name='password'
-          id='password-field'
-          label='Wachtwoord'
+          name='password-confirmation'
+          id='password-confirmation-field'
+          label='Bevestig Wachtwoord'
           validationRules={{
             required: {
               value: true,
-              message: 'Wachtwoord is verplicht',
-            }
+              message:  (val) => {
+                  if (UseWatch('password') != val) {
+                    return 'Uw wachtwoorden komen niet overeen.';
+                  }
+                  else
+                  return 'Bevestig Wachtwoord is verplicht';
+            }}
           }}
           register={register}
           errors={errors}
           labelStyle='hide'
-        /> <Input
-        type='password'
-        name='password-confirmation'
-        id='password-confirmation-field'
-        label='Bevestig Wachtwoord'
-        validationRules={{
-          required: {
-            value: true,
-            message:  (val) => {
-                if (UseWatch('password') != val) {
-                  return 'Uw wachtwoorden komen niet overeen.';
-                }
-                else
-                return 'Bevestig Wachtwoord is verplicht';
-          }}
-        }}
-        register={register}
-        errors={errors}
-        labelStyle='hide'
-      />
-        <Button
-          label='Aanmaken'
-          type='submit'
-          onClickCallBack={() => undefined}
         />
-          <Link className='link text-align-center' to='/login'>Al een account? Inloggen</Link>
-      </form>
-    </section>
+          <Button
+            label='Aanmaken'
+            type='submit'
+            onClickCallBack={() => undefined}
+          />
+            <Link className='link text-align-center' to='/login'>Al een account? Inloggen</Link>
+        </form>
+      </section>
+    </div>
   );
 }
 export default Register;

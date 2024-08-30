@@ -5,7 +5,7 @@ function Home() {
     <section>
         <h1>Welkom bij Diet chef!</h1>
           <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          Welkom bij Diet Chef "Stap binnen in een culinaire wereld van smaakvolle ontdekkingen! Welkom op onze eten pagina, waar elke hap een avontuur is en elk gerecht een verhaal vertelt. Laat je inspireren door een overvloed aan heerlijke recepten, boordevol smaak en creativiteit. Of je nu een doorgewinterde chef-kok bent of gewoon op zoek bent naar nieuwe culinaire ervaringen, hier vind je alles wat je nodig hebt om je smaakpapillen te prikkelen en je keuken tot leven te brengen. Dus trek een schort aan, pak je koksmes en laat je meevoeren op een onvergetelijke reis door de wereld van eten en genot. Eet smakelijk!"
           </p>
       </section>
   );

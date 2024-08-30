@@ -133,7 +133,7 @@ getData();
                                     onChange={toggleDaisryFree}
                                 />
                                 <span className="slider"></span>
-                                <p>Dairy free</p>
+                                <p>Dairy free </p>
                             </label>
                             <label className="switch">
 

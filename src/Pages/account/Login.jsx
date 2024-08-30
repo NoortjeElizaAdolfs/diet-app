@@ -7,6 +7,7 @@ import { useForm } from 'react-hook-form';
 import { AuthContext } from '../../context/Auth';
 import axios from "axios";
 import MessageBox from '../../Components/message_box/message_box';
+import "./Form.scss";
 
 function Login() {
 
@@ -37,51 +38,53 @@ function Login() {
   }
 
   return (
-    <section className='text-align-center'>
-      <h1>Inloggen</h1>
-      <MessageBox message={message} />
-      <form className='display-flex flex-direction-column-center margin-auto p-20' onSubmit={handleSubmit(handleFormSubmit)}>
-        <Input
-          type='text'
-          name='username'
-          id='username-field'
-          label='Gebruikersnaam'
-          validationRules={{
-            required: {
-              value: true,
-              message: 'Gebruikersnaam is verplicht',
-            }
-          }}
-          register={register}
-          errors={errors}
-          labelStyle='hide'
-        />
-        <Input
-          type='password'
-          name='password'
-          id='password-field'
-          label='Wachtwoord'
-          validationRules={{
-            required: {
-              value: true,
-              message: 'Wachtwoord is verplicht',
-            }
-          }}
-          register={register}
-          errors={errors}
-          labelStyle='hide'
-        />
-        <Button
-          label='Versturen'
-          type='submit'
-          onClickCallBack={() => undefined}
-        />
-        <div className='d-flex j-c-space-between'>
-          <Link className='link' to='/wachtwoord-vergeten'>Wachtwoord vergeten?</Link>
-          <Link className='link' to='/registreren'>Account aanmaken</Link>
-        </div>
-      </form>
-    </section>
+    <div class="login-container">
+      <section className='text-align-center'>
+        <h1>Inloggen</h1>
+        <MessageBox message={message} />
+        <form className='display-flex flex-direction-column-center margin-auto p-20' onSubmit={handleSubmit(handleFormSubmit)}>
+          <Input
+            type='text'
+            name='username'
+            id='username-field'
+            label='Gebruikersnaam'
+            validationRules={{
+              required: {
+                value: true,
+                message: 'Gebruikersnaam is verplicht',
+              }
+            }}
+            register={register}
+            errors={errors}
+            labelStyle='hide'
+          />
+          <Input
+            type='password'
+            name='password'
+            id='password-field'
+            label='Wachtwoord'
+            validationRules={{
+              required: {
+                value: true,
+                message: 'Wachtwoord is verplicht',
+              }
+            }}
+            register={register}
+            errors={errors}
+            labelStyle='hide'
+          />
+          <Button
+            label='Versturen'
+            type='submit'
+            onClickCallBack={() => undefined}
+          />
+          <div className='d-flex j-c-space-between'>
+            <Link className='link' to='/wachtwoord-vergeten'>Wachtwoord vergeten?</Link><br/>
+            <Link className='link' to='/registreren'>Account aanmaken</Link>
+          </div>
+        </form>
+      </section>
+    </div>
   );
 }
 export default Login;

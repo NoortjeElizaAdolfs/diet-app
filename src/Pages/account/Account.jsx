@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import './Account.css';
 import ButtonLink from '../../Components/button/ButtonLink';
 import { AuthContext } from '../../context/Auth';
+import "./Form.scss";
 
 function Account() {
   const { user } = useContext(AuthContext);

@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 import Recipe from "../../Components/recipe/Recipe";
 import ErrorBox from "../../Components/errorbox/ErrorBox";
 import axios from "axios";
-
+import "./Recepten.scss";
 
 function Recepten() {
 
