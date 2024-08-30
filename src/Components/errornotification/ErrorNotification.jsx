@@ -1,7 +1,7 @@
 import React from 'react';
 
-const ErrorBox = ({message}) => (
+const ErrorNotification = ({message}) => (
     <div className='auth-error'>{message}</div>
 );
 
-export default ErrorBox;
+export default ErrorNotification;

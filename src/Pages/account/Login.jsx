@@ -6,7 +6,7 @@ import Button from '../../Components/button/Button';
 import { useForm } from 'react-hook-form';
 import { AuthContext } from '../../context/Auth';
 import axios from "axios";
-import MessageBox from '../../Components/message_box/message_box';
+import Notification from '../../Components/notification/Notification';
 import "./Form.scss";
 
 function Login() {
@@ -41,7 +41,7 @@ function Login() {
     <div class="login-container">
       <section className='text-align-center'>
         <h1>Inloggen</h1>
-        <MessageBox message={message} />
+        <Notification message={message} />
         <form className='display-flex flex-direction-column-center margin-auto p-20' onSubmit={handleSubmit(handleFormSubmit)}>
           <Input
             type='text'

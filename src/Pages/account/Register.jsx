@@ -3,7 +3,7 @@ import './Account.css';
 import { Link } from 'react-router-dom';
 import Input from '../../Components/form/Input';
 import Button from '../../Components/button/Button';
-import MessageBox from '../../Components/message_box/message_box';
+import Notification from '../../Components/notification/Notification';
 import { useForm, useWatch as UseWatch} from 'react-hook-form';
 import axios from "axios";
 
@@ -43,7 +43,7 @@ function Register() {
     <div class="login-container">
       <section className='text-align-center'>
         <h1>Registreren</h1>
-        <MessageBox message={message} />
+        <Notification message={message} />
         <form className='display-flex flex-direction-column-center margin-auto p-20' onSubmit={handleSubmit(handleFormSubmit)}>
         <Input
             type='text'

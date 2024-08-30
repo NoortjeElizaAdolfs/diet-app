@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import ErrorBox from "../../Components/errorbox/ErrorBox";
+import ErrorNotification from "../../Components/errornotification/ErrorNotification";
 import Recipe from "../../Components/recipe/Recipe";
 import axios from "axios";
 
@@ -75,7 +75,7 @@ function Cocktails() {
                                                     <div></div>
                                             </div>
                                             <button type="submit" value="Search">Search</button>
-                                            {alert !== "" && <ErrorBox message={alert} />}
+                                            {alert !== "" && <ErrorNotification message={alert} />}
                                     </form>
                             </section>
                             <section className="fb-item">

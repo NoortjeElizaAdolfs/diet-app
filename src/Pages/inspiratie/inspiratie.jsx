@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import ErrorBox from "../../Components/errorbox/ErrorBox";
+import ErrorNotification from "../../Components/errornotification/ErrorNotification";
 import Recipe from "../../Components/recipe/Recipe";
 import axios from "axios";
-
+import "./inspiratie.scss";
 
 function Inspiratie() {
 const APP_ID = "7971cb3b";
@@ -133,7 +133,7 @@ getData();
                                     onChange={toggleDaisryFree}
                                 />
                                 <span className="slider"></span>
-                                <p>Dairy free </p>
+                                <p className="checkbox-label">Dairy free </p>
                             </label>
                             <label className="switch">
 
@@ -142,7 +142,7 @@ getData();
                                     onChange={toggleGlutenFree}
                                 />
                                 <span className="slider"></span>
-                                <p>Gluten free</p>
+                                <p className="checkbox-label">Gluten free</p>
                             </label>
                             <label className="switch">
                                 <input
@@ -150,7 +150,7 @@ getData();
                                     onChange={toggleVegan}
                                 />
                                 <span className="slider"></span>
-                                <p>Vegan</p>
+                                <p className="checkbox-label">Vegan</p>
                             </label>
                             <label className="switch">
                                 <input
@@ -158,11 +158,11 @@ getData();
                                     onChange={toggleVegetarian}
                                 />
                                 <span className="slider"></span>
-                                <p>Vegetarian</p>
+                                <p className="checkbox-label">Vegetarian</p>
                             </label>
                         </div>
                         <button type="submit" value="Search">Search</button>
-                        {alert !== "" && <ErrorBox message={alert} />}
+                        {alert !== "" && <ErrorNotification message={alert} />}
                     </form>
                 </section>
                 <section className="fb-item">

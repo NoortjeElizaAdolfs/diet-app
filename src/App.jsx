@@ -12,6 +12,7 @@ import Recepten from './Pages/recepten/Recepten';
 import { AuthContext } from './context/Auth';
 import Inspiratie from './Pages/inspiratie/inspiratie';
 import Cocktails from './Pages/cocktails/cocktails';
+import OverOns from './Pages/over ons/Overons';
 
 
 
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/recepten" element={user?.username ? <Recepten /> : <Login />} />
           <Route path="/inspiratie" element={user?.username ? <Inspiratie /> : <Login />} />
           <Route path="/cocktails" element={user?.username ? <Cocktails /> : <Login />} />
+          <Route path="/overons" element={user?.username ? <OverOns /> : <Login />} />
             <Route path="/login" element={<Login />} />
             <Route path="/logout" element={<Logout />} />
             <Route path="/registreren" element={<Register />} />

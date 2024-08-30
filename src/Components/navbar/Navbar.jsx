@@ -21,7 +21,7 @@ function Navbar() {
               <NavLink className={({ isActive }) => isActive ? 'active-menu-link' : 'default-menu-link'} to="/cocktails">Cocktails</NavLink>
             </li>
             <li>
-              <NavLink className={({ isActive }) => isActive ? 'active-menu-link' : 'default-menu-link'} to="/over-ons">Over Ons</NavLink>
+              <NavLink className={({ isActive }) => isActive ? 'active-menu-link' : 'default-menu-link'} to="/overons">Over Ons</NavLink>
             </li>
           </ul>
             <div className='group-link-icon'>
