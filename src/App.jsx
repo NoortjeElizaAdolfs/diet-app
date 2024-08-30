@@ -11,6 +11,8 @@ import NotFound from './Pages/not_found/Not-found';
 import Recepten from './Pages/recepten/Recepten';
 import { AuthContext } from './context/Auth';
 import Inspiratie from './Pages/inspiratie/inspiratie';
+import Cocktails from './Pages/cocktails/cocktails';
+
 
 
 const App = () => {
@@ -23,6 +25,7 @@ const App = () => {
           <Route path="/account" element={user?.username ? <Account /> : <Login />} />
           <Route path="/recepten" element={user?.username ? <Recepten /> : <Login />} />
           <Route path="/inspiratie" element={user?.username ? <Inspiratie /> : <Login />} />
+          <Route path="/cocktails" element={user?.username ? <Cocktails /> : <Login />} />
             <Route path="/login" element={<Login />} />
             <Route path="/logout" element={<Logout />} />
             <Route path="/registreren" element={<Register />} />
